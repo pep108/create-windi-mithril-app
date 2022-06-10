@@ -1,0 +1,44 @@
+/**
+	* This style disables the 300ms delay
+	* see: https://developers.google.com/web/updates/2013/12/300ms-tap-delay-gone-away
+	*/
+html {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #f7f7f9;
+  color: #171614;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* disable text selecting */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  width: 100%;
+  min-height: 100%;
+
+  font-family: "Proxima Nova Rg", Helvetica, Arial, sans-serif;
+  font-style: 'normal';
+  margin: 0;
+  padding: 0;
+  line-height: 1.42857;
+}
+
+button[disabled] {
+  opacity: .65;
+}
+
+.without-ring {
+  @apply focus: ring-0 focus:ring-offset-0;
+}

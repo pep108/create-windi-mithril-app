@@ -1,0 +1,10 @@
+:root {}
+
+/* Sytanx highlighting */
+:not(.dark) :not(pre)>code[class*="language-"], :not(.dark) pre[class*="language-"] {
+  background-color: #e7e5e4 !important;
+}
+
+.token.operator {
+  background: none !important;
+}
