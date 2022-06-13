@@ -5,8 +5,7 @@ import m from 'mithril'
  * SVG Spinner Component
  */
 const Spinner = {
-  view: function (vnode) {
-    const attrs = vnode.attrs
+  view: ({ attrs }) => {
     const css = 'spinner spinner-ios ' + attrs.class || ''
     const lineStr = 'line[y1="17"][y2="29"][transform="translate(32,32) '
     const anim = 'animate[attributeName="stroke-opacity"][dur="750ms"]'

@@ -29,67 +29,69 @@ const Description = {
     <div className='text-sm'>{children}</div>
 }
 
-const Home = () => ({
-  view: function () {
-    return (
-      <>
-        <AppHeader />
-        <div className='container mx-auto pt-4 pb-8 flex items-center justify-center flex-col'>
-          <PageTitle
-            className='text-3xl mb-6 <sm:text-2xl'
-            title={config.appName}
-          />
-          <div className='flex flex-row items-center'>
-            <img className='w-20 <sm:w-14' src={mithrilLogo} />
-            <div className='font-bold text-5xl px-4'>+</div>
-            <img className='w-20 <sm:w-14' src={windiLogo} />
-            <div className='font-bold text-5xl px-4'>+</div>
-            <img className='w-20 <sm:w-14' src={viteLogo} />
-          </div>
+const Home = () => {
+  return {
+    view: () => {
+      return (
+        <>
+          <AppHeader />
+          <div className='container mx-auto pt-4 pb-8 flex items-center justify-center flex-col'>
+            <PageTitle
+              className='text-3xl mb-6 <sm:text-2xl'
+              title={config.appName}
+            />
+            <div className='flex flex-row items-center'>
+              <img className='w-20 <sm:w-14' src={mithrilLogo} />
+              <div className='font-bold text-5xl px-4'>+</div>
+              <img className='w-20 <sm:w-14' src={windiLogo} />
+              <div className='font-bold text-5xl px-4'>+</div>
+              <img className='w-20 <sm:w-14' src={viteLogo} />
+            </div>
 
-          <div className='inline-flex flex-row flex-wrap justify-around min-w-full mt-4'>
-            <FeatureBox>
-              <Title href='https://mithril.js.org/'>Mithril</Title>
-              <Description>Lightweight and unopinionated. You control the DOM. Hyperscript of JSX, pick your flavor.</Description>
-            </FeatureBox>
-            <FeatureBox>
-              <Title href='https://windicss.org/'>Windi CSS</Title>
-              <Description>Utility-first CSS framework for fast prototyping.</Description>
-            </FeatureBox>
-            <FeatureBox>
-              <Title href='https://vitejs.dev/'>Vite</Title>
-              <Description>Next generation front end tooling.</Description>
-            </FeatureBox>
-            <FeatureBox>
-              <Title href='https://github.com/ludbek/powerform'>Powerform</Title>
-              <Description>Awesome form management and validation.</Description>
-            </FeatureBox>
-            <FeatureBox>
-              <Title>
-                <m.route.Link className='text-blue-400' href='/formi'>
-                  Formi
-                </m.route.Link>
-              </Title>
-              <Description>Powerform wrapper to help you build forms with ease.</Description>
-            </FeatureBox>
+            <div className='inline-flex flex-row flex-wrap justify-around min-w-full mt-4'>
+              <FeatureBox>
+                <Title href='https://mithril.js.org/'>Mithril</Title>
+                <Description>Lightweight and unopinionated. You control the DOM. Hyperscript of JSX, pick your flavor.</Description>
+              </FeatureBox>
+              <FeatureBox>
+                <Title href='https://windicss.org/'>Windi CSS</Title>
+                <Description>Utility-first CSS framework for fast prototyping.</Description>
+              </FeatureBox>
+              <FeatureBox>
+                <Title href='https://vitejs.dev/'>Vite</Title>
+                <Description>Next generation front end tooling.</Description>
+              </FeatureBox>
+              <FeatureBox>
+                <Title href='https://github.com/ludbek/powerform'>Powerform</Title>
+                <Description>Awesome form management and validation.</Description>
+              </FeatureBox>
+              <FeatureBox>
+                <Title>
+                  <m.route.Link className='text-blue-400' href='/formi'>
+                    Formi
+                  </m.route.Link>
+                </Title>
+                <Description>Powerform wrapper to help you build forms with ease.</Description>
+              </FeatureBox>
 
-            <FeatureBox>
-              <Title href='https://feathericons.com/'>
-                <i className='icon icon-feather mr-2 text-xl' /> Feather Icons
-              </Title>
-              <Description>
-                Simple and beautiful icons.
-              </Description>
-            </FeatureBox>
-            <FeatureBox>
-              <Title>Deployment Ready</Title>
-              <Description>Deploy to AWS with <a className='text-blue-400' href='https://gulpjs.com' target='_blank' rel='noreferrer'>gulp</a>.</Description>
-            </FeatureBox>
+              <FeatureBox>
+                <Title href='https://feathericons.com/'>
+                  <i className='icon icon-feather mr-2 text-xl' /> Feather Icons
+                </Title>
+                <Description>
+                  Simple and beautiful icons.
+                </Description>
+              </FeatureBox>
+              <FeatureBox>
+                <Title>Deployment Ready</Title>
+                <Description>Deploy to AWS with <a className='text-blue-400' href='https://gulpjs.com' target='_blank' rel='noreferrer'>gulp</a>.</Description>
+              </FeatureBox>
+            </div>
           </div>
-        </div>
-      </>
-    )
+        </>
+      )
+    }
   }
-})
+}
 
 export default Home

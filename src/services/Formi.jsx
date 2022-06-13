@@ -21,27 +21,28 @@ export const prepareForm = (schema, config = {}) => {
   return form
 }
 
-export const Formi = {
-  oninit: function ({ attrs: { form, onSubmit } }) {
-    form.onClickSubmit = () => {
-      if (!form.isValid()) {
-        return
-      }
-
-      onSubmit(form.getData())
+export const Formi = ({ attrs: { form, onSubmit } }) => {
+  form.onClickSubmit = () => {
+    if (!form.isValid()) {
+      return
     }
-  },
-  oncreate: ({ attrs: { form }, dom }) => {
-    // Find each of the form fields by name and add
-    // a blur listener
-    form.fieldNames.forEach(field => {
-      const el = dom.querySelector(`[name="${field}"]`)
-      el.onblur = (e) => {
-        form[field].touched = true
-      }
-    })
-  },
-  view: function ({ attrs: { className }, children }) {
-    return <div className={className}>{children}</div>
+
+    onSubmit(form.getData())
+  }
+
+  return {
+    oncreate: ({ attrs: { form }, dom }) => {
+      // Find each of the form fields by name and add
+      // a blur listener
+      form.fieldNames.forEach(field => {
+        const el = dom.querySelector(`[name="${field}"]`)
+        el.onblur = (e) => {
+          form[field].touched = true
+        }
+      })
+    },
+    view: ({ attrs: { className }, children }) => {
+      return <div className={className}>{children}</div>
+    }
   }
 }

@@ -46,12 +46,9 @@ Ensure that you pass formi to the InputField to take advantage of default value,
 />
 ```
 
-### Mithril Tip with ES6
-
-If you are using component state, do not use function shorthand to define the view (i.e. (vnode) => { }) because the state will be lost.
-
 ### Features:
 
+* Rendering & Routing via [mithril](https://mithril.js.org)
 * ES6 Support via [babel](https://babeljs.io/) (v7)
 * Utility CSS via [windicss](https://windicss.org/)
 * Form Support via [powerform](https://github.com/ludbek/powerform), custom Formi wrapper and reusable form components

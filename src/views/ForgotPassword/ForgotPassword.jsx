@@ -3,8 +3,8 @@ import m from 'mithril'
 import ForgotPasswordForm from './ForgotPasswordForm'
 import AppHeader from '/components/AppHeader'
 
-const ForgotPassword = {
-  view: function () {
+const ForgotPassword = () => ({
+  view: () => {
     return (
       <div>
         <AppHeader />
@@ -24,6 +24,6 @@ const ForgotPassword = {
       </div>
     )
   }
-}
+})
 
 export default ForgotPassword

@@ -27,13 +27,13 @@ import CreateAccount from './views/CreateAccount'
   }
 
   const Router = {
-    oncreate: function (vnode) {
+    oncreate: (vnode) => {
       // Use a timeout to avoid m.redraw.sync() error
       setTimeout(() => {
         m.route(vnode.dom, '/', Routes)
       }, 10)
     },
-    view: function () {
+    view: () => {
       return m('div', { class: 'content' })
     }
   }
