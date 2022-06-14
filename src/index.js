@@ -10,6 +10,7 @@ import './styles/theme.css'
 
 // Views
 import Home from './views/Home'
+import HyperscriptHome from './views/HyperscriptHome'
 import FormiExample from './views/FormiExample'
 import Login from './views/Login/Login'
 import { ForgotPassword } from './views/ForgotPassword'
@@ -19,6 +20,7 @@ import CreateAccount from './views/CreateAccount'
 (function () {
   const Routes = {
     '/': Home,
+    '/home': HyperscriptHome,
     '/formi': FormiExample,
     '/login': Login,
     '/forgot-password': ForgotPassword,
