@@ -19,7 +19,7 @@ const InputField = {
           <div className='py-1 px-3 font-medium'>{label}</div>}
         <input
           type='text'
-          className='m-input w-full dark:bg-stone-700'
+          className='outline-none focus:outline-none m-input w-full dark:bg-stone-700'
           value={formi && name ? formi[name].getData() : ''}
           oninput={formi ? formi.onInput : () => {}}
           error={formi && formi[name].touched && Boolean(formi[name].error)}
