@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 import AppHeader from '/components/AppHeader'
 import PageTitle from '/components/PageTitle'
 import mithrilLogo from '/assets/logo/mithril.svg'
@@ -43,7 +42,7 @@ const HyperscriptHome = () => {
         m('div', { class: 'container mx-auto pt-4 pb-8 flex items-center justify-center flex-col' },
           m(PageTitle, {
             class: 'text-3xl mb-6 <sm:text-2xl',
-            title: config.appName
+            title: import.meta.env.VITE_APP_NAME
           }),
 
           m('div', { class: 'flex flex-row items-center' },

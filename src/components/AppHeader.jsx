@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 import Logo from './Logo'
 import IconButton from './IconButton'
 
@@ -22,18 +21,18 @@ const AppHeader = () => {
             </div>
           </div>
           <div className='flex flex-row items-center'>
-            <IconButton onclick={() => window.open(config.gitlabUrl, '_blank')}>
+            <IconButton onclick={() => window.open(import.meta.env.VITE_GITLAB_URL, '_blank')}>
               <i className='icon icon-gitlab cursor-pointer pr-4' />
             </IconButton>
-            <IconButton onclick={() => window.open(config.githubUrl, '_blank')}>
+            <IconButton onclick={() => window.open(import.meta.env.VITE_GITHUB_URL, '_blank')}>
               <i className='icon icon-github cursor-pointer pr-4' />
             </IconButton>
             <IconButton onclick={() => html.classList.toggle('dark')}>
               <i className={`icon icon-${html.classList.contains('dark') ? 'sun' : 'moon'} cursor-pointer pr-4`} />
             </IconButton>
 
-            <div className='font-bold text-sm uppercase cursor-pointer'>
-              <m.route.Link href='/login'>Log In</m.route.Link>
+            <div className='text-sm uppercase cursor-pointer'>
+              <m.route.Link href='/login' className='font-bold'>Log In</m.route.Link>
             </div>
           </div>
         </div>

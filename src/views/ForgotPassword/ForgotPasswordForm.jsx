@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 
 import { Formi, prepareForm } from '/services/Formi'
 import { isValidEmail } from '/services/form'
@@ -26,7 +25,7 @@ const ForgotPassword = () => {
 
     m.request({
       method: 'POST',
-      url: `${config.API_ENDPOINT}/forgot_password`,
+      url: `${import.meta.env.VITE_API_ENDPOINT}/forgot_password`,
       body: data
     })
       .then(function (result) {
@@ -47,7 +46,7 @@ const ForgotPassword = () => {
             Trouble accessing your account?
           </h2>
 
-          <div>Enter the email address you use for {config.appName}.</div>
+          <div>Enter the email address you use for {import.meta.env.VITE_APP_NAME}.</div>
 
           <Formi
             className='mt-3'

@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 import { Formi, prepareForm } from '/services/Formi'
 import { isValidEmail } from '/services/form'
 import { required, isString, minLength, equalsTo } from 'validatex'
@@ -31,7 +30,7 @@ const Login = () => {
     //
     // Example using fetch
     //
-    /* fetch(`${config.API_ENDPOINT}/create_account`, {
+    /* fetch(`${import.meta.env.VITE_API_ENDPOINT}/create_account`, {
       method: 'POST',
       body: JSON.stringify({
         email: data.email,
@@ -53,7 +52,7 @@ const Login = () => {
     //
     // m.request({
     //   method: 'POST',
-    //   url: `${config.API_ENDPOINT}/create_account`,
+    //   url: `${import.meta.env.VITE_API_ENDPOINT}/create_account`,
     //   body: {
     //     user: {
     //       email: data.email,

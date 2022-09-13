@@ -7,7 +7,6 @@ import SubmitButton from '/components/SubmitButton'
 import ButtonSpinner from '/components/ButtonSpinner'
 import AppHeader from '/components/AppHeader'
 import PageTitle from '/components/PageTitle'
-import config from '/config'
 
 const CreateAccount = () => {
   let loading = false
@@ -45,7 +44,7 @@ const CreateAccount = () => {
     //
     // Example using fetch
     //
-    /* fetch(`${config.API_ENDPOINT}/create_account`, {
+    /* fetch(`${import.meta.env.VITE_API_ENDPOINT}/create_account`, {
       method: 'POST',
       body: JSON.stringify({
         email: data.email,
@@ -67,7 +66,7 @@ const CreateAccount = () => {
     //
     m.request({
       method: 'POST',
-      url: `${config.API_ENDPOINT}/create_account`,
+      url: `${import.meta.env.VITE_API_ENDPOINT}/create_account`,
       body: {
         user: {
           email: data.email,

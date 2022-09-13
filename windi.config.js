@@ -1,9 +1,7 @@
 import colors from 'windicss/colors'
 import plugin from 'windicss/plugin'
 
-function range (size, startAt = 1) {
-  return Array.from(Array(size).keys()).map(i => i + startAt)
-}
+const range = (size, startAt = 1) => Array.from(Array(size).keys()).map(i => i + startAt)
 
 export default {
   darkMode: 'class', // or 'media'

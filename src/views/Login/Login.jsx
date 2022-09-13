@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 import LoginForm from './LoginForm'
 import ForgotPasswordForm from '../ForgotPassword/ForgotPasswordForm'
 import PageTitle from '/components/PageTitle'
@@ -13,7 +12,7 @@ const Home = () => {
       return (
         <div className='container px-6 mx-auto max-w-screen-sm pt-10 flex items-center justify-center flex-col'>
           <div className='mt-6'>
-            <PageTitle title={config.appName} />
+            <PageTitle title={import.meta.env.VITE_APP_NAME} />
           </div>
 
           <div className='w-sm w-full max-w-sm'>

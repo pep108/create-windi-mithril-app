@@ -1,0 +1,67 @@
+// Color system
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$yellow:   #ffe000;
+$black:    #1d2d35;
+// $beige:    #fbf7f0;
+$red:      #eb2f06;
+$purple:   #5d2f86;
+$brown:    #aa9c84;
+$blue: 	   #327ab7;
+
+$blue-300: #5c7885;
+$pink-500: #d32e9d;
+
+$primary: 	$black;
+$secondary: $blue;
+
+$color-btn-bg: $black;
+$color-btn-border: darken($black, 5%);
+$color-btn-text: $white;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Helvetica Neue, sans-serif;
+// -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+$headline-font:               "Proxima Nova Th";
+$headline-font-weight:        800;
+// $headline-font:               "Myriad Pro Bold";
+
+// Checkboxes
+// background-color: rgba(250,208,0,0.87);
+$checkbox-color:				rgba(52,122,183, .87);
+
+// Input Borders
+//
+$input-border: #ccc;
+$input-focus-color: 			$blue;
+$input-focus-shadow: 			rgba(51, 122, 183, 0.5);
+
+// $blue-form: rgb(51, 122, 183, .87);
+// $disabled: rgba(0,0,0,0.26);
+
+:root {
+  // --md-primary: rgb(51, 122, 183, .87);
+  --md-primary: rgb(51, 122, 183, 1);
+  --md-primary-solid: rgb(51, 122, 183, 1);
+  --md-checkbox-check: #fff;
+  --md-disabled: rgba(0,0,0,0.26);
+  --md-checkbox-border-disabled: rgb(238,238,238);
+}

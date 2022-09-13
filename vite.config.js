@@ -10,6 +10,9 @@ import { createHtmlPlugin } from 'vite-plugin-html'
  */
 import plainText from 'vite-plugin-plain-text'
 
+const projectRootDir = resolve(__dirname)
+const range = (size, startAt = 1) => Array.from(Array(size).keys()).map(i => i + startAt)
+
 export default {
   root: 'src',
   build: {
@@ -34,10 +37,21 @@ export default {
         {
           find: 'mithril',
           replacement: resolve(__dirname, 'node_modules/mithril/index.js')
+        },
+        {
+          find: 'Assets',
+          replacement: resolve(projectRootDir, './src/assets')
         }
       ]
     })
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/scss/variables.scss";'
+      }
+    }
+  },
   server: {
     port: 3030
   },

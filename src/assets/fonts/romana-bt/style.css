@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Romana BT';
+  src: url("RomanaBt-Roman.woff") format("woff"),
+    url("RomanaBt-Roman.svg") format("svg"),
+    url("RomanaBt-Roman.ttf") format("truetype");
+  font-style: normal;
+}

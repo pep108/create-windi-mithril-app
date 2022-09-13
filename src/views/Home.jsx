@@ -1,5 +1,4 @@
 import m from 'mithril'
-import config from '/config'
 import AppHeader from '/components/AppHeader'
 import PageTitle from '/components/PageTitle'
 import mithrilLogo from '/assets/logo/mithril.svg'
@@ -19,7 +18,7 @@ const Title = {
   view: ({ attrs, children }) =>
     <div className='font-bold mb-2'>
       {attrs.href
-        ? <a className='flex align-center text-blue-400' href={attrs.href} target='_blank' rel='noreferrer'>{children}</a>
+        ? <a className='flex align-center text-blue-400 font-semibold' href={attrs.href} target='_blank' rel='noreferrer'>{children}</a>
         : <div>{children}</div>}
     </div>
 }
@@ -38,7 +37,7 @@ const Home = () => {
           <div className='container mx-auto pt-4 pb-8 flex items-center justify-center flex-col'>
             <PageTitle
               className='text-3xl mb-6 <sm:text-2xl'
-              title={config.appName}
+              title={import.meta.env.VITE_APP_NAME}
             />
             <div className='flex flex-row items-center'>
               <img className='w-20 <sm:w-14' src={mithrilLogo} />
@@ -49,6 +48,16 @@ const Home = () => {
             </div>
 
             <div className='inline-flex flex-row flex-wrap justify-around min-w-full mt-4'>
+              <FeatureBox>
+                <Title>
+                  <m.route.Link className='text-blue-400 font-semibold' href='/kitchen-sink'>
+                    Kitchen Sink
+                  </m.route.Link>
+                </Title>
+                <Description>
+                  Check out all the <m.route.Link selector='a' className='text-blue-400' href='/kitchen-sink'>components</m.route.Link> you can use.
+                </Description>
+              </FeatureBox>
               <FeatureBox>
                 <Title href='https://mithril.js.org/'>Mithril</Title>
                 <Description>Lightweight and unopinionated. You control the DOM. Hyperscript of JSX, pick your flavor.</Description>
@@ -67,7 +76,7 @@ const Home = () => {
               </FeatureBox>
               <FeatureBox>
                 <Title>
-                  <m.route.Link className='text-blue-400' href='/formi'>
+                  <m.route.Link className='text-blue-400 font-semibold' href='/formi'>
                     Formi
                   </m.route.Link>
                 </Title>

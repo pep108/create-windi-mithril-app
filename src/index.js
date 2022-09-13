@@ -1,12 +1,12 @@
 import m from 'mithril'
 import 'virtual:windi.css'
 
-// Base Stylesheets
-import './styles/normalize.css'
-import './styles/base.css'
+// Fonts
 import './assets/fonts/feather/style.css'
 import './assets/fonts/proxima-nova/style.css'
-import './styles/theme.css'
+
+/* Include global app styles here, so that it will over ride component's css styles */
+import './app.scss'
 
 // Views
 import Home from './views/Home'
@@ -16,6 +16,7 @@ import Login from './views/Login/Login'
 import { ForgotPassword } from './views/ForgotPassword'
 import ResetPassword from './views/ResetPassword'
 import CreateAccount from './views/CreateAccount'
+import KitchenSink from './views/KitchenSink'
 
 (function () {
   const Routes = {
@@ -25,7 +26,8 @@ import CreateAccount from './views/CreateAccount'
     '/login': Login,
     '/forgot-password': ForgotPassword,
     '/reset-password': ResetPassword,
-    '/sign-up': CreateAccount
+    '/sign-up': CreateAccount,
+    '/kitchen-sink': KitchenSink
   }
 
   const Router = {
