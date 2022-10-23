@@ -41,6 +41,14 @@ export default {
         {
           find: 'Assets',
           replacement: resolve(projectRootDir, './src/assets')
+        },
+        {
+          find: 'Utils',
+          replacement: resolve(projectRootDir, './src/utils')
+        },
+        {
+          find: 'Components',
+          replacement: resolve(projectRootDir, './src/components')
         }
       ]
     })

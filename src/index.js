@@ -18,6 +18,8 @@ import ResetPassword from './views/ResetPassword'
 import CreateAccount from './views/CreateAccount'
 import KitchenSink from './views/KitchenSink'
 
+// import SideMenu from './components/Menu/SideMenu'
+
 (function () {
   const Routes = {
     '/': Home,
@@ -38,7 +40,7 @@ import KitchenSink from './views/KitchenSink'
       }, 10)
     },
     view: () => {
-      return m('div', { class: 'content' })
+      return m('div', { class: 'wrapper' })
     }
   }
 
@@ -47,7 +49,11 @@ import KitchenSink from './views/KitchenSink'
       view: () => {
         return m('div', {
           class: `min-h-screen dark:bg-stone-${m.route.get() === '/login' ? '900' : '800'} dark:text-stone-300`
-        }, m(Router))
+        },
+        m('div',
+          // m(SideMenu, { roles: [] }),
+          m(Router)
+        ))
       }
     })
   })

@@ -1,0 +1,93 @@
+//
+// Animated Logo
+//
+.aside .logo {
+	position: absolute;
+	left: 0;
+  z-index: -1;
+}
+.aside .logo-text {
+	margin-left: 50px;
+}
+.aside .logo-text a {
+  font-weight: 600;
+  font-size: 24px;
+  color: #111;
+}
+
+.dark .aside .logo-text a {
+  color: #fff;
+}
+
+#Logo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; 
+	// right: -25%; 
+	bottom: 0; 
+	// left: -30%;
+	left: -43%;
+	margin: auto;
+	display:block; 
+	fill: $blue;
+	stroke: $blue;
+	stroke-miterlimit: 5;
+  z-index: -1;
+}
+  
+  // Only animate the checkmark on the homepage
+  .home .Animate-Draw, .loading .Animate-Draw {
+    fill-opacity: 0;
+    /* Sets the opacity of the fill to 0 or none */
+    animation-timing-function: ease-in-out;
+    /* Slow start end end to the animation */
+    animation-fill-mode: forwards;
+    /* Will retain styles set in the last keyframe */
+    animation-iteration: 1;
+    /* How many times the animation runs */
+    stroke-width:3px;
+    /* Making the drawn line wider */
+    stroke-linecap:round;
+    /* Making the end of the line rounded */
+    strong-linejoin:round;
+    /* Making where the lines join rouned */
+    animation-name: DrawLine, FadeStroke, FillIn;
+    /* Declares the animation names for our keyframes */
+    animation-duration: 200ms, 200ms, 400ms;
+    /* First applies to DrawLine, seccond is FadeStroke, third is FillIn*/
+    // animation-delay: 0s, 500ms, 500ms;
+    animation-delay: 0s, 0s, 0s;
+    /* First applies to DrawLine, seccond is FadeStroke, third is FillIn*/
+  }
+  
+  #Draw-Circle {
+    stroke-dashArray: 1100;
+    stroke-dashoffset: 1100; 
+    /* This causes the draw effect*/
+  }
+  
+  #Draw-Check { 
+    // animation-delay: 800ms, 1s, 1.3s;
+    animation-delay: 300ms, 500ms, 800ms;
+    /* First applies to DrawLine, seccond is FadeStroke, third is Fill In*/
+    // animation-duration: 1.5s, 1s, 1s; 
+    animation-duration: 1.2s, 700ms, 700ms;
+    /* First applies to DrawLine, seccond is FadeStroke, third is FillIn*/
+    stroke-dashArray: 1500;
+    stroke-dashoffset: 1500;
+    /* This causes the draw effect*/
+  }
+  
+  @keyframes DrawLine {
+	  to { stroke-dashOffset: 0; }
+  }
+  
+  @keyframes FadeStroke {
+	  to { stroke-opacity: 0; }
+  }
+  
+  @keyframes FillIn {
+    from { fill-opacity: 0; }
+    to { fill-opacity: 1; }
+  }

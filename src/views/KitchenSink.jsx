@@ -12,10 +12,11 @@ import PageTitle from '/components/PageTitle'
 // Fonts
 import 'Assets/fonts/feather/style.css'
 import 'Assets/fonts/brandon-grotesque/style.css'
-import 'Assets/fonts/proxima-nova/style.css'
+import 'Assets/fonts/geomanist/style.css'
 import 'Assets/fonts/keep-calm/style.css'
 import 'Assets/fonts/montserrat/style.css'
 import 'Assets/fonts/myriad-pro/style.css'
+import 'Assets/fonts/proxima-nova/style.css'
 import 'Assets/fonts/romana-bt/style.css'
 import 'Assets/fonts/source-sans-pro/style.css'
 
@@ -117,6 +118,7 @@ const KitchenSink = () => {
                 <div className='grid inline-grid grid-cols-3 md:grid-cols-3 <md:grid-cols-1 auto-cols-auto gap-2'>
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-proxima-nova text-red-500'>Proxima Nova</h3>
+                    <h3 className='my-0 font-proxima-nova text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-proxima-nova'>h1 Headline</h1>
                     <h2 className='my-0 font-proxima-nova'>h2 Headline</h2>
                     <h3 className='my-0 font-proxima-nova'>h3 Headline</h3>
@@ -127,6 +129,7 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-brandon-grotesque text-red-500'>Brandon Grotesque</h3>
+                    <h3 className='my-0 font-brandon-grotesque text-red-500 text-4xl'>Grower's Almanac</h3>
                     <h1 className='my-0 font-brandon-grotesque'>h1 Headline</h1>
                     <h2 className='my-0 font-brandon-grotesque'>h2 Headline</h2>
                     <h3 className='my-0 font-brandon-grotesque'>h3 Headline</h3>
@@ -137,6 +140,7 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-keep-calm text-red-500'>Keep Calm</h3>
+                    <h3 className='my-0 font-keep-calm text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-keep-calm'>h1 Headline</h1>
                     <h2 className='my-0 font-keep-calm'>h2 Headline</h2>
                     <h3 className='my-0 font-keep-calm'>h3 Headline</h3>
@@ -147,6 +151,7 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-montserrat text-red-500'>Montserrat</h3>
+                    <h3 className='my-0 font-montserrat text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-montserrat'>h1 Headline</h1>
                     <h2 className='my-0 font-montserrat'>h2 Headline</h2>
                     <h3 className='my-0 font-montserrat'>h3 Headline</h3>
@@ -157,6 +162,7 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-myriad-pro text-red-500'>Myriad Pro</h3>
+                    <h3 className='my-0 font-myriad-pro text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-myriad-pro'>h1 Headline</h1>
                     <h2 className='my-0 font-myriad-pro'>h2 Headline</h2>
                     <h3 className='my-0 font-myriad-pro'>h3 Headline</h3>
@@ -167,6 +173,7 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-romana-bt text-red-500'>Romana BT</h3>
+                    <h3 className='my-0 font-romana-bt text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-romana-bt'>h1 Headline</h1>
                     <h2 className='my-0 font-romana-bt'>h2 Headline</h2>
                     <h3 className='my-0 font-romana-bt'>h3 Headline</h3>
@@ -177,12 +184,24 @@ const KitchenSink = () => {
 
                   <div className='px-2 mb-4'>
                     <h3 className='my-0 font-source-sans-pro text-red-500'>Source Sans Pro</h3>
+                    <h3 className='my-0 font-source-sans-pro text-red-500'>Grower's Almanac</h3>
                     <h1 className='my-0 font-source-sans-pro'>h1 Headline</h1>
                     <h2 className='my-0 font-source-sans-pro'>h2 Headline</h2>
                     <h3 className='my-0 font-source-sans-pro'>h3 Headline</h3>
                     <h4 className='my-0 font-source-sans-pro'>h4 Headline</h4>
                     <h5 className='my-0 font-source-sans-pro'>h5 Headline</h5>
                     <SampleText fontClass='font-source-sans-pro' />
+                  </div>
+
+                  <div className='px-2 mb-4'>
+                    <h3 className='my-0 font-geomanist text-red-500'>Geomanist</h3>
+                    <h3 className='my-0 font-geomanist text-red-500'>Grower's Almanac</h3>
+                    <h1 className='my-0 font-geomanist'>h1 Headline</h1>
+                    <h2 className='my-0 font-geomanist'>h2 Headline</h2>
+                    <h3 className='my-0 font-geomanist'>h3 Headline</h3>
+                    <h4 className='my-0 font-geomanist'>h4 Headline</h4>
+                    <h5 className='my-0 font-geomanist'>h5 Headline</h5>
+                    <SampleText fontClass='font-geomanist' />
                   </div>
                 </div>
 
