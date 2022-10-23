@@ -1,0 +1,15 @@
+.star-rating {
+	margin-left: -4px;
+}
+
+.star-rating > i.material-icons {
+	margin: unset;
+}
+
+i.material-icons.icon--star {
+  fill: #ccc;
+  cursor: pointer;
+}
+i.material-icons.icon--star.active, i.material-icons.icon--star:hover {
+  fill: #fad000;
+}

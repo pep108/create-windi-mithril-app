@@ -21,10 +21,12 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "autoprefixer": "^10.4.10",
+    "fuzzysort": "^2.0.1",
     "lodash": "^4.17.19",
     "luxon": "^2.4.0",
     "mithril": "^2.0.4",
     "moment": "^2.29.3",
+    "pako": "^2.0.4",
     "powerform": "^4.0.1",
     "prismjs": "^1.28.0",
     "smoothscroll-polyfill": "^0.4.4"

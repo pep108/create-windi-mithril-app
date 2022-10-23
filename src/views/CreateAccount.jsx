@@ -84,7 +84,7 @@ const CreateAccount = () => {
     view: () => {
       return (
         <>
-          <AppHeader />
+          {/* <AppHeader /> */}
           <div className='container mx-auto'>
             <PageTitle title='Create Your Account' />
 

@@ -1,0 +1,11 @@
+.md-hide {
+	display: none!important;
+}
+
+.md-lockscroll {
+	overflow: hidden;
+}
+
+.md-fixed {
+	position: fixed;
+}

@@ -1,6 +1,5 @@
 import m from 'mithril'
-// import icon from 'Assets/icon/icon-152.png'
-import logo from 'Assets/logo/logo-451x100.jpg'
+import logo from 'Assets/logo/rnn-owl.png'
 
 const IconLogo = {
   view: ({ attrs: { size } }) => {

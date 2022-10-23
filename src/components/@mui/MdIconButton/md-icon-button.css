@@ -1,0 +1,41 @@
+.md-button.md-icon-button {
+  margin: 0 6px;
+  height: 40px;
+  /* min-width: 0; */
+  min-width: 40px;
+  line-height: 24px;
+  padding: 8px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.md-button.md-icon-button .md-ripple-container {
+  border-radius: 50%;
+  background-clip: padding-box;
+  overflow: hidden;
+  -webkit-mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC");
+}
+
+/* Solid Background md-button Icon Styles
+------------------------------------------------- */
+
+.md-button.md-icon-button.button-solid-bg, .md-button.md-icon-button.button-bg-hover:hover {
+	background-color: #e8e8e8;
+}
+
+.md-button.md-icon-button.button-solid-bg.disabled {
+	background-color: #f7f7f7;
+}
+
+.md-button.md-icon-button.button-solid-bg.disabled:hover {
+	cursor: disabled;
+}
+
+.md-button.md-icon-button.button-solid-bg:not(.disabled):hover, .md-icon-button.bg-hover:not(.disabled):not([disabled]):hover {
+	background-color: #cacac8;
+}
+
+.md-button.md-icon-button.button-solid-bg:not(.disabled):hover .material-icons, .md-icon-button.bg-hover:not(.disabled):not([disabled]):hover .material-icons {
+	color: #42413d;
+	fill: #42413d;
+}

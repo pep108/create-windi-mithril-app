@@ -19,7 +19,7 @@ const Home = () => {
             {!forgotPassword &&
               <>
                 <div
-                  className='my-6 mx-2 px-6 py-6 flex-1 flex items-center justify-center flex-col relative shadow-md bg-white dark:bg-stone-800 dark:text-stone-300'
+                  className='my-6 mx-2 px-6 py-6 flex-1 flex items-center justify-center flex-col relative shadow-md bg-white dark:bg-stone-900 dark:text-stone-300'
                   style={{ borderTop: '4px solid #46b1c9' }}
                 >
                   <LoginForm />

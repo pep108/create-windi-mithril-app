@@ -1,0 +1,43 @@
+body, html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: default;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+body, html {
+  height: 100%;
+  position: relative;
+}
+body {
+max-width: 100%;
+max-height: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 2em auto;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  min-height: 300px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding: 75px 16px 40px 16px;
+  }
+
+  .footer-fixed .content {
+    padding-bottom: 60px;
+  }
+}

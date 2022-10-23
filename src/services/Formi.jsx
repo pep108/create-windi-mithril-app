@@ -36,8 +36,12 @@ export const Formi = ({ attrs: { form, onSubmit } }) => {
       // a blur listener
       form.fieldNames.forEach(field => {
         const el = dom.querySelector(`[name="${field}"]`)
-        el.onblur = (e) => {
-          form[field].touched = true
+        if (el) {
+          el.onblur = (e) => {
+            form[field].touched = true
+          }
+        } else {
+          console.warn(`element not found: [name="${field}"]`)
         }
       })
     },

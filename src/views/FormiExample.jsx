@@ -79,7 +79,7 @@ const FormiExample = () => {
     view: () => {
       return (
         <>
-          <AppHeader />
+          {/* <AppHeader /> */}
           <div className='container mx-auto pt-4 pb-8 flex items-center justify-center flex-col'>
             <PageTitle
               className='text-3xl mb-6'

@@ -92,7 +92,7 @@ const HeaderMobile = () => {
     },
     view: ({ attrs: { height, weight } }) => {
       return (
-        <div class='header-mobile flex items-center header-mobile-fixed'>
+        <div class='header-mobile flex items-center header-mobile-fixed dark:bg-stone-900'>
           <StandardMenu />
         </div>
       )

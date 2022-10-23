@@ -1,0 +1,28 @@
+.md-table md-progress-linear {
+	z-index: 10;
+}
+table.md-table thead.md-head + .md-table-progress md-progress-linear {
+  top: -3px;
+}
+table.md-table .md-table-progress th {
+  padding: 0;
+}
+table.md-table .md-table-progress th md-progress-linear {
+  height: 0;
+  transition: opacity 1s;
+}
+table.md-table .md-table-progress th md-progress-linear.md-hide {
+  opacity: 0;
+}
+table.md-table .md-table-progress th md-progress-linear > .md-container {
+  height: 3px;
+  top: 0;
+  transition: none;
+}
+table.md-table .md-table-progress th md-progress-linear > .md-container > .md-bar {
+  height: 3px;
+}
+/* add opacity to tbody when loading */
+/* tr.md-table-loading + .md-body {
+	opacity: .5;
+} */

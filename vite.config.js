@@ -49,6 +49,18 @@ export default {
         {
           find: 'Components',
           replacement: resolve(projectRootDir, './src/components')
+        },
+        {
+          find: '@mui',
+          replacement: resolve(projectRootDir, './src/components/@mui')
+        },
+        {
+          find: 'Icons',
+          replacement: resolve(projectRootDir, './src/components/icons')
+        },
+        {
+          find: 'Services',
+          replacement: resolve(projectRootDir, './src/services')
         }
       ]
     })

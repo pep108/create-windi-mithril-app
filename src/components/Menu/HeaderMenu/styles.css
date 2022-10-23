@@ -399,6 +399,9 @@
     z-index: 97;
     border-bottom: 1px solid #ccc;
   }
+  .dark .header.header-fixed {
+    border-bottom: 1px solid #111;
+  }
 
   .header-fixed.aside-minimize .header {
     left: 70px;

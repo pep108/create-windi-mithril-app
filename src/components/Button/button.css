@@ -1,0 +1,471 @@
+.lc-button {
+  // font-size: var(--typescale-300-font-size);
+  // line-height: var(--typescale-300-line-height);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  display: block;
+  // width: 100%;
+  // padding: 14px 24px 16px;
+  padding: 14px 24px;
+
+  background-color: #cacac8;
+}
+
+@media(min-width:544px) {
+  .lc-button {
+    display: inline-block;
+    width: auto
+  }
+}
+
+.lc-button .octicon {
+  position: relative;
+  top: -2px;
+  margin: -4px 0;
+  transition: transform .2s;
+  transform: translateX(0);
+  width: 16px;
+  height: 16px
+}
+
+.lc-button .octicon.octicon-left {
+  position: relative;
+  top: -2px;
+  margin: -4px 0;
+  transition: transform .2s;
+  transform: translateX(0);
+  width: 16px;
+  height: 16px
+}
+
+.lc-button:focus,
+.lc-button:hover {
+  text-decoration: none;
+  outline: 0
+}
+
+.lc-button:focus .octicon,
+.lc-button:hover .octicon {
+  transform: translateX(4px)
+}
+
+.lc-button:focus .octicon.octicon-left,
+.lc-button:hover .octicon.octicon-left {
+  transform: rotate(180deg) translateX(4px)
+}
+
+.lc-button:focus .octicon-chevrow-stem,
+.lc-button:hover .octicon-chevrow-stem {
+  stroke-dashoffset: 20
+}
+
+.lc-button:active .octicon {
+  transform: translateX(6px)
+}
+
+.lc-button:active .octicon.octicon-left {
+  transform: rotate(180deg) translateX(6px)
+}
+
+.lc-button-text {
+  position: relative;
+  z-index: 2
+}
+
+// .lc-primary .lc-button-text {
+//   color: $black;
+// }
+// button.lc-primary .lc-button-text {
+//   color: $white;
+// }
+
+.lc-button.lc-primary {
+  color: $white;
+  background: $blue;
+  // background: linear-gradient(180deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, 0)), #1b1f23;
+  transition: box-shadow .2s
+}
+
+// button.lc-secondary .lc-button-text {
+//   color: $black;
+// }
+// button.lc-secondary.lc-outlined .lc-button-text {
+//   color: $white
+// }
+// .lc-button.lc-primary.lc-outlined .octicon {
+//   color: $black;
+// }
+// .lc-button.lc-primary.lc-outlined .lc-button-text,
+// .lc-button.lc-primary.lc-outlined:hover .octicon {
+//   color: $blue;
+// }
+
+
+// .lc-button.lc-primary:after {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 1;
+//   content: "";
+//   // background: linear-gradient(180deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, 0));
+//   border-radius: 6px;
+//   opacity: 0;
+//   transition: opacity .2s
+// }
+
+.lc-button.lc-outlined {
+background-color: transparent;
+}
+
+.lc-button.lc-primary:focus,
+.lc-button.lc-primary:hover {
+  box-shadow: 0 3px 2px rgba(0, 0, 0, .07), 0 7px 5px rgba(0, 0, 0, .04), 0 12px 10px rgba(0, 0, 0, .03), 0 22px 18px rgba(0, 0, 0, .03), 0 42px 33px rgba(0, 0, 0, .02), 0 100px 80px rgba(0, 0, 0, .02)
+}
+
+.lc-button.lc-primary:focus:after,
+.lc-button.lc-primary:hover:after {
+  opacity: 1
+}
+
+.lc-button.lc-primary:focus:disabled,
+.lc-button.lc-primary:hover:disabled {
+  box-shadow: none !important
+}
+
+// .lc-button.lc-primary:active {
+//   outline: none;
+//   box-shadow: 0 0 0 transparent
+// }
+
+// .lc-button.lc-primary:active:after {
+//   opacity: .5
+// }
+
+.lc-button.lc-secondary {
+  color: $white;
+  // background-color: transparent;
+  background-color: $black;
+  outline: none;
+  
+  transition: box-shadow .2s
+}
+// .lc-button.lc-secondary .lc-button-text {
+  
+// }
+.lc-button.lc-secondary.lc-outlined {
+  color: #1b1f23;
+}
+
+.lc-button.lc-secondary:focus,
+.lc-button.lc-secondary:hover {
+  box-shadow: inset 0 0 0 2px #1b1f23
+}
+
+.lc-button.lc-secondary:active {
+  box-shadow: inset 0 0 0 3px #1b1f23
+}
+
+.lc-button.lc-secondary:disabled {
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 35, .15)
+}
+
+.lc-button.lc-secondary.lc-outlined {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 35, .15);
+}
+
+.lc-button--block {
+  display: block;
+  width: 100%
+}
+
+.lc-button-sm {
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.lc-button-lg {
+  font-size: 1.25rem;
+  // font-size: var(--typescale-400-font-size);
+  // line-height: var(--typescale-400-line-height);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  padding: 14px 24px 16px
+}
+
+@media(min-width:544px) {
+  .lc-button-lg {
+    display: inline-block;
+    width: auto
+  }
+}
+
+@media(min-width:768px) {
+  .lc-button-lg {
+    padding: 16px 32px 18px
+  }
+}
+
+.lc-button-lg .octicon {
+  position: relative;
+  top: -2px;
+  margin: -4px 0;
+  transition: transform .2s;
+  transform: translateX(0);
+  width: 16px;
+  height: 16px
+}
+
+@media(min-width:768px) {
+  .lc-button-lg .octicon {
+    width: 20px;
+    height: 20px
+  }
+}
+
+.lc-button-lg:focus,
+.lc-button-lg:hover {
+  text-decoration: none;
+  outline: 0
+}
+
+.lc-button-lg:focus .octicon,
+.lc-button-lg:hover .octicon {
+  transform: translateX(4px)
+}
+
+.lc-button-lg:focus .octicon-chevrow-stem,
+.lc-button-lg:hover .octicon-chevrow-stem {
+  stroke-dashoffset: 20
+}
+
+.lc-button-lg:active .octicon {
+  transform: translateX(6px)
+}
+
+.lc-button-lg:disabled,
+.lc-button:disabled {
+  cursor: not-allowed;
+  opacity: .3
+}
+
+.lc-button-lg:disabled:after,
+.lc-button:disabled:after {
+  display: none
+}
+
+.lc-button-lg:disabled:hover .octicon,
+.lc-button:disabled:hover .octicon {
+  left: 0
+}
+
+.lc-button-lg:disabled:hover .octicon-chevrow-stem,
+.lc-button:disabled:hover .octicon-chevrow-stem {
+  stroke-dashoffset: 10
+}
+
+.lc-button.lc-primary-inverted {
+  color: #1b1f23;
+  background: linear-gradient(180deg, #fff, #f6f8fa);
+  transition: box-shadow .2s
+}
+
+.lc-button.lc-primary-inverted:after {
+  background: linear-gradient(180deg, #fff, #e1e4e8)
+}
+
+.lc-button.lc-primary-inverted:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, .5), 0 100px 80px hsla(0, 0%, 100%, .0174624), 0 41.7776px 33.4221px hsla(0, 0%, 100%, .0235573), 0 22.3363px 17.869px hsla(0, 0%, 100%, .0282784), 0 12.5216px 10.0172px hsla(0, 0%, 100%, .0339075), 0 6.6501px 5.32008px hsla(0, 0%, 100%, .04317), 0 2.76726px 2.21381px hsla(0, 0%, 100%, .07)
+}
+
+.lc-button.lc-primary-inverted:active {
+  box-shadow: 0 0 0 transparent
+}
+
+.lc-button.lc-secondary-inverted {
+  color: #fff;
+  box-shadow: inset 0 0 0 1px #586069;
+  transition: box-shadow .2s
+}
+
+.lc-button.lc-secondary-inverted:focus,
+.lc-button.lc-secondary-inverted:hover {
+  box-shadow: inset 0 0 0 2px #fff
+}
+
+.lc-button.lc-secondary-inverted:active {
+  box-shadow: inset 0 0 0 3px #fff
+}
+
+.lc-button.lc-secondary-inverted:disabled {
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .15)
+}
+
+.octicon-chevrow-stem {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  transition: stroke-dashoffset .2s
+}
+
+.octicon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: currentColor
+}
+
+.lc-button .octicon.octicon-left {
+  transform: rotate(180deg);
+  margin-right: 4px;
+  margin-top: -2px;
+}
+
+.gloss-raised {
+  box-shadow: 0 100px 80px rgba(0, 0, 0, .0174624), 0 41.7776px 33.4221px rgba(0, 0, 0, .0235573), 0 22.3363px 17.869px rgba(0, 0, 0, .0282784), 0 12.5216px 10.0172px rgba(0, 0, 0, .0339075), 0 6.6501px 5.32008px rgba(0, 0, 0, .04317), 0 2.76726px 2.21381px rgba(0, 0, 0, .07)
+}
+
+:root {
+  --reach-dialog: 1
+}
+
+[data-reach-dialog-overlay] {
+  background: rgba(0, 0, 0, .33);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto
+}
+
+[data-reach-dialog-content] {
+  width: 50vw;
+  margin: 10vh auto;
+  background: #fff;
+  padding: 2rem;
+  outline: none
+}
+
+button.lc-primary.lc-outlined {
+  background-color: transparent;
+  color: $black;
+  // box-shadow: none !important;
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 35, .15);
+}
+// button.lc-button.lc-primary.lc-outlined .lc-button-text {
+//   color: $black;
+// }
+.lc-button.lc-primary:focus, 
+.lc-button.lc-primary:hover {
+  // box-shadow: inset 0 0 0 2px #1b1f23;
+  // color: $blue;
+  box-shadow: inset 0 0 0 2px $blue;
+}
+// button.lc-button.lc-primary:not(.lc-standard):focus .lc-button-text, 
+// button.lc-button.lc-primary:not(.lc-standard):hover .lc-button-text {
+//   color: $blue;
+// }
+
+button.lc-primary.lc-outlined:hover,
+button.lc-primary.lc-outlined:focus {
+  border-color: $blue;
+}
+
+// button.lc-secondary.lc-outlined {
+//   border-color: $black;
+//   background-color: $black;
+//   color: $white;
+//   // box-shadow: none !important;
+// }
+
+.lc-button-spinner.active:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #42413d;
+  // border-top-color: $secondary;
+  animation: spinner .6s linear infinite;
+}
+
+.lc-button-spinner.active:before {
+  width: 16px;
+  height: 16px;
+}
+
+// .loading-container.centered .loading-mask-spinner:before {
+// 	left: 50%;
+// }
+
+// .lc-button-spinner:not(.active) {
+// 	display: none;
+// }
+
+
+.lc-button-spinner.active {
+  padding-right: 34px;
+}
+
+.lc-button-spinner.right:before {
+  right: 10px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// .lc-button {
+//   font-size: var(--typescale-300-font-size);
+//   line-height: var(--typescale-300-line-height);
+//   font-family: Alliance No 0.1;
+//   font-weight: 400;
+//   text-transform: none;
+//   letter-spacing: normal;
+//   position: relative;
+//   display: inline-block;
+//   font-weight: 600;
+//   line-height: 1;
+//   text-align: center;
+//   cursor: pointer;
+//   border: 0;
+//   border-radius: 6px;
+//   display: block;
+//   width: 100%;
+//   padding: 16px 24px;
+// }
+
+// .lc-secondary {
+//   color: #1b1f23;
+//   background-color: transparent;
+//   outline: none;
+//   box-shadow: inset 0 0 0 1px rgb(27 31 35 / 15%);
+//   transition: box-shadow .2s; 
+// }

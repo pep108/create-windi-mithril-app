@@ -3,16 +3,20 @@
 //
 .aside .logo {
 	position: absolute;
-	left: 0;
+	left: 3px;
   z-index: -1;
 }
 .aside .logo-text {
-	margin-left: 50px;
+	margin-left: 60px;
 }
 .aside .logo-text a {
   font-weight: 600;
   font-size: 24px;
   color: #111;
+}
+
+.aside-minimize .logo-text a {
+  visibility: hidden;
 }
 
 .dark .aside .logo-text a {

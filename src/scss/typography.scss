@@ -102,3 +102,28 @@ p {
 .font-source-sans-pro {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+.headline {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.text-muted {
+	color: #ccc;
+	fill: #ccc;
+}
+
+.text-yellow {
+	color: #fad000;
+	fill: #fad000;
+}
+
+.text-red {
+	color: $red;
+	fill: $red;
+}
+
+.color-red {
+	fill: $red !important;
+}

@@ -8,3 +8,21 @@
 .token.operator {
   background: none !important;
 }
+
+.page-layout {
+	// max-width: 800px;
+	// margin: 1em auto;
+	margin: 0 24px;
+	padding: 0 16px;
+}
+
+.page-layout .holder .preloader {
+	top: 35%;
+}
+
+@media (max-width: 640px) {
+	.page-layout {
+		padding: 0 8px;
+		margin: 0 12px;
+	}
+}

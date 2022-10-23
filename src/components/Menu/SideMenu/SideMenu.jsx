@@ -162,12 +162,41 @@ const SideMenu = ({ attrs: { roles } }) => {
                   icon={<DashboardIcon />}
                 />
 
-                {/* {roles.includes('orders') && */}
                 <MenuItem
-                  text='My Contacts'
-                  route='/contacts'
-                  isActive={currentRoute === '/contacts'}
+                  text='Kitchen Sink'
+                  route='/components'
+                  isActive={currentRoute === '/components'}
                   icon={<AddressBookIcon />}
+                />
+                <MenuItem
+                  text='Login'
+                  route='/login'
+                  isActive={currentRoute === '/login'}
+                  icon={<AccountIcon />}
+                />
+                <MenuItem
+                  text='Forgot Password'
+                  route='/forgot-password'
+                  isActive={currentRoute === '/forgot-password'}
+                  icon={<AccountIcon />}
+                />
+                <MenuItem
+                  text='Reset Password'
+                  route='/reset-password'
+                  isActive={currentRoute === '/reset-password'}
+                  icon={<AccountIcon />}
+                />
+                <MenuItem
+                  text='Formi Example'
+                  route='/formi'
+                  isActive={currentRoute === '/formi'}
+                  icon={<SubscriptionIcon />}
+                />
+                <MenuItem
+                  text='Create Account'
+                  route='/sign-up'
+                  isActive={currentRoute === '/sign-up'}
+                  icon={<UserIcon />}
                 />
 
                 {roles.includes('reports') &&
@@ -183,53 +212,6 @@ const SideMenu = ({ attrs: { roles } }) => {
                   route='/account'
                   isActive={currentRoute === '/account'}
                   icon={<AccountIcon />}
-                /> */}
-                {/* } */}
-                {/* {roles.includes('protips') &&
-                  <MenuItem
-                    text='Pro Tips'
-                    route='/protips'
-                    isActive={['/protips', '/create-protip', '/categories', '/tags'].includes(currentRoute)}
-                    icon={<AccountIcon />}
-                  >
-                    <MenuChild
-                      text='All Pro Tips'
-                      route='/protips'
-                      isActive={currentRoute === '/protips'}
-                      // className='mt-3 '
-                    />
-                    <MenuChild
-                      text='Add New'
-                      route='/create-protip'
-                      isActive={currentRoute === '/create-protip'}
-                    />
-                    <MenuChild
-                      text='Categories'
-                      route='/categories'
-                      isActive={currentRoute === '/categories'}
-                    />
-                    <MenuChild
-                      text='Tags'
-                      route='/tags'
-                      isActive={currentRoute === '/tags'}
-                    />
-                  </MenuItem>} */}
-                {/* <MenuItem
-                  text='Subscriptions'
-                  route='/subscriptions'
-                  isActive={currentRoute === '/subscriptions'}
-                  icon={<SubscriptionIcon />}
-                />
-                <MenuItem
-                  text='Devices'
-                  route='/devices'
-                  isActive={currentRoute === '/devices'}
-                  icon={<ToggleIcon />}
-                />
-                <MenuItem
-                  text='Users'
-                  route='/users'
-                  icon={<UserIcon />}
                 /> */}
               </ul>
             </div>

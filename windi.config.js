@@ -57,7 +57,7 @@ export default {
     plugin(({ addComponents }) => {
       // Application-themed components
       const links = {
-        a: {
+        'a, a:visited': {
           color: '#e94f37',
           textDecoration: 'none'
         }

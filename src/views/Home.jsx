@@ -33,7 +33,7 @@ const Home = () => {
     view: () => {
       return (
         <>
-          <AppHeader />
+          {/* <AppHeader /> */}
           <div className='container mx-auto pt-4 pb-8 flex items-center justify-center flex-col'>
             <PageTitle
               className='text-3xl mb-6 <sm:text-2xl'
@@ -50,12 +50,12 @@ const Home = () => {
             <div className='inline-flex flex-row flex-wrap justify-around min-w-full mt-4'>
               <FeatureBox>
                 <Title>
-                  <m.route.Link className='text-blue-400 font-semibold' href='/kitchen-sink'>
+                  <m.route.Link className='text-blue-400 font-semibold' href='/components'>
                     Kitchen Sink
                   </m.route.Link>
                 </Title>
                 <Description>
-                  Check out all the <m.route.Link selector='a' className='text-blue-400' href='/kitchen-sink'>components</m.route.Link> you can use.
+                  Check out all the <m.route.Link selector='a' className='text-blue-400' href='/components'>components</m.route.Link> you can use.
                 </Description>
               </FeatureBox>
               <FeatureBox>

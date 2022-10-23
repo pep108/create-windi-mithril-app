@@ -7,7 +7,7 @@ const ForgotPassword = () => ({
   view: () => {
     return (
       <div>
-        <AppHeader />
+        {/* <AppHeader /> */}
         <div
           className='container px-6 mx-auto max-w-screen-sm pt-10 flex items-center justify-center flex-col'
           style={{ maxWidth: '400px' }}

@@ -42,3 +42,72 @@ button[disabled] {
 .without-ring {
   @apply focus: ring-0 focus:ring-offset-0;
 }
+
+@media (min-width: 992px) {
+  .content {
+    /* padding: 25px 0; */
+    /* padding: 65px 0 25px; */
+    padding: 65px 0 0;
+  }
+
+  .footer-fixed .content {
+    padding-bottom: 60px;
+  }
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
+@media print {
+  .print-content-only {
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .print-content-only .wrapper,
+  .print-content-only .page,
+  .print-content-only .content,
+  .print-content-only .container,
+  .print-content-only .container-fluid,
+  .print-content-only .container-sm,
+  .print-content-only .container-md,
+  .print-content-only .container-lg,
+  .print-content-only .container-xl,
+  .print-content-only .container-xxl {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .print-content-only .aside,
+  .print-content-only .sidebar,
+  .print-content-only .sticky-toolbar,
+  .print-content-only .scrolltop,
+  .print-content-only .header,
+  .print-content-only .header-mobile,
+  .print-content-only .footer,
+  .print-content-only .subheader,
+  .print-content-only .offcanvas {
+    display: none !important;
+  }
+}
+
+/* screen reader -- hidden text */
+.screen-reader-text,.screen-reader-text span {
+  border: 0;
+  clip: rect(1px,1px,1px,1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal!important
+}
+
+.button .screen-reader-text {
+  height: auto
+}

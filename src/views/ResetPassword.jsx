@@ -52,7 +52,7 @@ const ResetPassword = () => {
     view: () => {
       return (
         <>
-          <AppHeader />
+          {/* <AppHeader /> */}
           <div className='container mx-auto'>
             <PageTitle title='Reset Your Password' />
 
